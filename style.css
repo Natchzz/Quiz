@@ -1,0 +1,263 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Resetting default styles and setting the font family */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling the body and setting the background */
+body{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.51'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Common styles for interface, rule_box, and quiz-container */
+.interface,
+.rule_box,
+.quiz-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
+                0px 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Styling for the title section in the interface */
+.interface,
+.rule_box,
+.quiz-container{
+    width: 600px;
+    background-color: #fff;
+    margin: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+/* Styling for the introduction section in the interface */
+.interface #title{
+    border-bottom: solid 2px black;
+    font-weight: 400;
+}
+
+/* Styling for the special span element in the introduction */
+.interface #introduction p{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* Styling for the Start Quiz button */
+.interface #introduction span{
+    color: #5B0888 ;
+    font-weight: 900;
+}
+
+/* Styling for the Start Quiz button hover effect */
+.interface .start_btn{
+    border-top: 1px solid lightgray;
+}
+
+/* Styling for the header in the rule_box */
+.interface .start_btn button{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5B0888;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+/* Styling for the rules list in the rule_box */
+.interface .start_btn #start-button:hover{
+    background-color: #9D76C1;
+    transform: scale(1.03);
+    font-size: 20px;
+}
+
+/* Styling for buttons in the rule_box */
+.rule_box .header {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+/* Styling for buttons in the rule_box */
+.rule_box .rules_list {
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px 15px;
+}
+
+/* Styling for the Quit button in the rule_box */
+.rule_box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+
+/* Styling for the Start button in the rule_box */
+.rule_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+/* Styling for button hover effect */
+.rule_box .buttons .quit button{
+    background-color: #5B0888;
+    color: #fff;
+}
+
+/* Styling for the Start button hover effect */
+.rule_box .buttons .start button {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Styling for rule box button hover effect */
+.rule_box .buttons button:hover{
+    transform: scale(1.03);
+}
+
+
+/* Styling for rule box buttons start hover effect */
+.rule_box .buttons .start button:hover{
+    background-color: #9D76C1;
+}
+
+/* Styling for the quiz container */
+.quiz-container{
+    margin: 10px 15px;
+    width: 700px;
+}
+
+/* Styling for the header in the quiz container */
+.quiz-container header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+
+/* Styling for the header in the quiz container */
+.quiz-container header h1{
+    padding-left: 10px;
+
+}
+
+/* Styling for the header in the quiz container */
+.quiz-container header h1 {
+    padding-left: 10px;
+}
+
+/* Styling for the timer in the quiz container */
+.quiz-container header #timer{
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+
+/* Styling for the timer span in the quiz container */
+.quiz-container header #timer span{
+    font-weight: 700;
+}
+
+/* Styling for the question container in the quiz */
+.quiz-container #question-container{
+    text-align: left;
+    padding: 10px;
+    font-size: 17px;
+    border-bottom:  1px solid lightgray;
+}
+
+/* Styling for options input in the quiz container */
+.quiz-container #options input{
+    cursor: pointer;
+}
+
+/* Styling for buttons in the quiz container */
+.quiz-container button {
+    padding: 5px;
+    float: right;
+    margin: 10px;
+    transition: 0.3s all ease;  
+    border-radius: 5px;  
+    cursor: pointer;
+}
+
+/* Styling for button hover effect in the quiz container */
+.quiz-container button:hover{
+    background-color: #9D76C1;
+}
+
+/* Styling for the restart and exit buttons section in the quiz container */
+.quiz-container #restart-exit-buttons{
+    font-size: 20px;
+}
+
+/* Styling for the restart quiz and exit quiz buttons in the quiz container */
+.quiz-container #restart-exit-buttons #restart-quiz,
+.quiz-container #restart-exit-buttons #exit-quiz{
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Styling for the restart quiz button hover effect in the quiz container */
+.quiz-container #restart-exit-buttons #restart-quiz:hover{
+    background-color: #9D76C1;
+}
+
+/* Styling for the exit quiz button hover effect in the quiz container */
+.quiz-container #restart-exit-buttons #exit-quiz:hover{
+    background-color: #5B0888;
+    color: #fff;
+}
+
+/* Styling for the result section in the quiz container */
+.quiz-container #result{
+    font-size: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+/* Styling for the icon in the quiz container */
+.quiz-container #icon{
+    margin-top: 10px;
+    font-size: 75px;
+    color: #5B0888;
+}
+
+/* Styling for the greet section in the quiz container */
+.quiz-container #greet {
+    font-size: 30px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
